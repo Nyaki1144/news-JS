@@ -33,3 +33,32 @@ footer .copyright a:hover {
 footer .copyright:before {
     content: '©';
 }
+
+.github {
+    width: 100px;
+    height: 100px;
+    background: url(./asset/GitHub.png) no-repeat center;
+    background-size: 60%;
+    /* background: center no-repeat #eee 35%; */
+}
+
+.school {
+    width: 100px;
+    height: 100px;
+    background: url(./asset/rs_school_js.png) no-repeat center;
+    background-size: 100%;
+    /* background: center no-repeat #eee 35%; */
+}
+
+.wrapper {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.links {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}

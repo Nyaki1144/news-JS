@@ -11,11 +11,19 @@ const baseConfig = {
     module: {
         rules: [
             {
+                test: /\.html$/i,
+                loader: 'html-loader',
+            },
+            {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
             },
             { test: /\.ts$/, loader: 'ts-loader' },
             { test: /\.js$/, loader: 'source-map-loader' },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
         ],
     },
     resolve: {
@@ -23,6 +31,7 @@ const baseConfig = {
     },
     output: {
         filename: 'index.js',
+        assetModuleFilename: 'asset/[hash][ext][query]',
         path: path.resolve(__dirname, './built'),
     },
     plugins: [
