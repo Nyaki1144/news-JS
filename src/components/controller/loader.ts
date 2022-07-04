@@ -1,13 +1,13 @@
-import { IData } from '../../components/types/types';
+import SourcesResponse from '../../components/types/sourcesResponse';
+import ArticleResponse from '../../components/types/articlesResponse';
 
 type OptionsPar = {
     [k: string]: string;
 };
 
-interface IGetResp {
-    endpoint: string;
-    options?: OptionsPar;
-}
+export type ArticlesResponseHandler = (data: ArticleResponse) => void;
+export type SourcesResponseHandler = (data: SourcesResponse) => void;
+export type ResponseHandler = ArticlesResponseHandler | SourcesResponseHandler;
 
 class Loader {
     constructor(readonly baseLink: string, readonly options: OptionsPar) {
@@ -16,8 +16,8 @@ class Loader {
     }
 
     getResp(
-        { endpoint, options = {} }: IGetResp,
-        callback = (): void => {
+        { endpoint, options = {} }: { endpoint: string; options?: OptionsPar },
+        callback: ResponseHandler = () => {
             console.error('No callback for GET response');
         }
     ): void {
@@ -47,7 +47,7 @@ class Loader {
         return url.slice(0, -1);
     }
 
-    load(method: 'GET' | 'POST', endpoint: string, callback: (data: IData) => void, options: OptionsPar) {
+    load(method: 'GET' | 'POST', endpoint: string, callback: ResponseHandler, options: OptionsPar) {
         fetch(this.makeUrl(options, endpoint), { method })
             .then(this.errorHandler)
             .then((res) => res.json())

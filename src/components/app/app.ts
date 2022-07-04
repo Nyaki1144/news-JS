@@ -1,18 +1,6 @@
 import AppController from '../controller/controller';
 import { AppView } from '../view/appView';
-import { INews } from '../types/types';
-
-interface ArticlesResponseSuccess {
-    status: 'ok';
-    totalResults: number;
-    articles: INews[];
-}
-
-interface ArticlesResponseFailed {
-    status: 'error';
-    code: string;
-    message: string;
-}
+// import { SourcesResponse, ResponseArticle } from '../types/types';
 
 class App {
     controller: AppController;
@@ -25,12 +13,11 @@ class App {
 
     start() {
         document?.querySelector('.sources')?.addEventListener('click', (e: Event) =>
-            this.controller.getNews(e, (data: ArticlesResponseSuccess) => {
-                console.log(data);
+            this.controller.getNews(e, (data) => {
                 this.view.drawNews(data);
             })
         );
-        this.controller.getSources((data: ArticlesResponseFailed) => this.view.drawSources(data));
+        this.controller.getSources((data) => this.view.drawSources(data));
     }
 }
 
