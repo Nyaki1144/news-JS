@@ -332,7 +332,7 @@
                 var i = (function (n) {
                     function e() {
                         return (
-                            n.call(this, 'https://nodenews.herokuapp.com', {
+                            n.call(this, 'https://nodenews.herokuapp.com/', {
                                 apiKey: '1e9785b25ebb49c4be26ca0ae54480c1',
                             }) || this
                         );
