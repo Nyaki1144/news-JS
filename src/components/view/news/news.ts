@@ -4,13 +4,11 @@ import IArticle from '../../types/article';
 class News {
     draw(data: IArticle[]) {
         const news = data.length >= 10 ? data.filter((_item, idx) => idx < 10) : data;
-
         const fragment = document.createDocumentFragment() as DocumentFragment;
         const newsItemTemp = document.querySelector('#newsItemTemp') as HTMLTemplateElement;
 
         news.forEach((item, idx) => {
             const newsClone = newsItemTemp.content.cloneNode(true) as HTMLElement;
-
             if (idx % 2) {
                 const newsArt = newsClone.querySelector('.news__article') as HTMLElement;
                 newsArt?.classList.add('alt');
