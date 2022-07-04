@@ -8,20 +8,22 @@ export interface ISources {
     country: string;
 }
 
-export interface IResponseObject {
-    status: string;
-    totalResults: number;
+interface ISourcesSuccess {
+    status: 'ok';
     articles: ISources[];
 }
 
-export interface IData {
-    status: string;
-    totalResults: number;
-    articles: INews[];
-    sources: ISources[];
+interface ISourcesFailed {
+    status: 'error';
+    code: string;
+    message: string;
 }
 
-export interface INews {
+export type SourcesResponse = ISourcesSuccess | ISourcesFailed;
+
+// ------------------------------------------------------------------------
+
+export interface IArticle {
     source: ISources;
     author: string;
     title: string;
@@ -31,3 +33,16 @@ export interface INews {
     publishedAt: string;
     content: string;
 }
+
+export interface ISuccessArticle {
+    status: 'ok';
+    sources: IArticle[];
+}
+
+export interface IFailedArticle {
+    status: 'error';
+    code: string;
+    message: string;
+}
+
+export type Response = ISuccessArticle | IFailedArticle;
