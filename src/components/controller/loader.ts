@@ -10,10 +10,7 @@ export type SourcesResponseHandler = (data: SourcesResponse) => void;
 export type ResponseHandler = ArticlesResponseHandler | SourcesResponseHandler;
 
 class Loader {
-    constructor(readonly baseLink: string, readonly options: OptionsPar) {
-        // this.baseLink = baseLink;
-        // this.options = options;
-    }
+    constructor(readonly baseLink: string, readonly options: OptionsPar) {}
 
     getResp(
         { endpoint, options = {} }: { endpoint: string; options?: OptionsPar },
