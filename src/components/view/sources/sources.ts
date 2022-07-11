@@ -15,7 +15,7 @@ class Sources {
 
             if (newStrin !== '') {
                 data.forEach((item) => {
-                    if (item.name.search(newStrin) !== -1) {
+                    if (item.name.includes(newStrin)) {
                         const sourceClone = sourceItemTemp.content.cloneNode(true) as HTMLElement;
 
                         const sourceCloneItemName = sourceClone.querySelector('.source__item-name') as HTMLElement;
@@ -25,12 +25,16 @@ class Sources {
                         const sourceCloneItem = sourceClone.querySelector('.source__item') as HTMLElement;
                         sourceCloneItem?.setAttribute('data-source-id', item.id || '');
                         fragment.append(sourceClone);
+                    } else if (item.name === null) {
+                        console.log('hgfh');
                     }
                 });
             } else {
                 data.forEach(() => {
                     const sourceCloneItem = document.querySelector('.source__item') as HTMLElement;
-                    sourceCloneItem.classList.remove('.source__item');
+                    if (sourceCloneItem) {
+                        sourceCloneItem.classList.remove('.source__item');
+                    }
                 });
             }
 
