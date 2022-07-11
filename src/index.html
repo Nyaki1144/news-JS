@@ -11,13 +11,22 @@
             <h1>News Portal</h1>
         </header>
         <main>
+            <form action="" method="get">
+                <input name="s" placeholder="write news portal name" type="search" id="inputName" />
+            </form>
+
             <div class="sources buttons"></div>
             <div class="news"></div>
         </main>
         <footer>
-            <p class="copyright">
-                Copyright <a href="https://newsapi.org">NewsAPI</a>
-            </p>
+            <div class="wrapper">
+                <div class="links">
+                    <a href="https://github.com/Nyaki1144"> <div class="github"></div> </a>
+                    <a href="https://rs.school/js/"> <div class="school"></div></a>
+                </div>
+
+                <p class="copyright">Copyright <a href="https://newsapi.org">NewsAPI</a></p>
+            </div>
         </footer>
 
         <template id="sourceItemTemp">
@@ -45,7 +54,5 @@
                 </div>
             </div>
         </template>
-
-        <script src="./index.js"></script>
     </body>
 </html>
