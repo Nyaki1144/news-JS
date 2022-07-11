@@ -3,7 +3,6 @@ import ISources from '../../types/source';
 
 const inputName = document.querySelector('#inputName') as HTMLInputElement;
 
-// as HTMLInputElement
 class Sources {
     draw(data: ISources[]) {
         const fragment = document.createDocumentFragment() as DocumentFragment;
