@@ -10,8 +10,8 @@ class News {
         news.forEach((item, idx) => {
             const newsClone = newsItemTemp.content.cloneNode(true) as HTMLElement;
             if (idx % 2) {
-                const newsArt = newsClone.querySelector('.news__article') as HTMLElement;
-                newsArt.classList.add('alt');
+                const newsArt = newsClone.querySelector('.news__article');
+                newsArt?.classList.add('alt');
             }
 
             const newsMetaPhoto = newsClone.querySelector('.news__meta-photo') as HTMLElement;
