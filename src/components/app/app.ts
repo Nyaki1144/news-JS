@@ -1,6 +1,5 @@
 import AppController from '../controller/controller';
 import { AppView } from '../view/appView';
-// import { SourcesResponse, ResponseArticle } from '../types/types';
 
 class App {
     controller: AppController;
