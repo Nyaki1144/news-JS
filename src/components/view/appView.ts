@@ -14,14 +14,14 @@ export class AppView {
 
     drawNews(res: ArticleResponse) {
         if (res.status === 'ok') {
-            const values = res?.articles || [];
+            const values = res.articles || [];
             this.news.draw(values);
         }
     }
 
     drawSources(res: SourcesResponse) {
         if (res.status === 'ok') {
-            const values = res?.sources || [];
+            const values = res.sources || [];
             this.sources.draw(values);
         }
     }
