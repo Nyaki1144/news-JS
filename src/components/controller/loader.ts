@@ -1,5 +1,5 @@
 import SourcesResponse from '../../components/types/sourcesResponse';
-import ArticleResponse from '../../components/types/articlesResponse';
+import { ArticleResponse } from '../../components/types/articlesResponse';
 
 type OptionsPar = {
     [k: string]: string;

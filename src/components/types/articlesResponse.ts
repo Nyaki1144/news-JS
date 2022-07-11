@@ -12,5 +12,4 @@ export interface IFailedArticle {
     message: string;
 }
 
-type ArticleResponse = ISuccessArticle | IFailedArticle;
-export default ArticleResponse;
+export type ArticleResponse = ISuccessArticle | IFailedArticle;
