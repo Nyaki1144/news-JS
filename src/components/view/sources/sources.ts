@@ -5,7 +5,7 @@ const inputName = document.querySelector('#inputName') as HTMLInputElement;
 
 class Sources {
     draw(data: ISources[]) {
-        const fragment = document.createDocumentFragment() as DocumentFragment;
+        const fragment = document.createDocumentFragment();
         const sourceItemTemp = document.querySelector('#sourceItemTemp') as HTMLTemplateElement;
         if (inputName) {
             let newStrin = ' ';
