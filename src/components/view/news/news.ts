@@ -14,7 +14,7 @@ class News {
                 newsArt.classList.add('alt');
             }
 
-            const newsMetaPhoto = newsClone.querySelector<HTMLElement>('.news__meta-photo') as HTMLElement;
+            const newsMetaPhoto = newsClone.querySelector('.news__meta-photo') as HTMLElement;
             newsMetaPhoto.style.backgroundImage = `url(${item.urlToImage || 'img/news_placeholder.jpg'})`;
 
             const newsMetaAutor = newsClone.querySelector('.news__meta-author') as HTMLElement;
