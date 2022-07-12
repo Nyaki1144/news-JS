@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Merienda-Bold';
+    src: url('../src/asset/fonts/Merienda-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Merienda-Regular';
+    src: url('../src/asset/fonts/Merienda-Regular.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-family: 'Merienda-Regular';
+    font-size: 14px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Merienda-Regular';
+}
+
+.wrapper {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+@import './blocks/normalize.scss';
+@import './blocks/nav.scss';
+@import './blocks/header.scss';
+@import './blocks/title-logo.scss';
+@import './blocks/button.scss';
+@import './blocks/main.scss';
+@import './blocks/our-best.scss';
+@import './blocks/card.scss';
+@import './blocks/footer.scss';

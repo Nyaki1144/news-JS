@@ -1,0 +1,30 @@
+main {
+    .title-logo {
+        span:before {
+            border-bottom: 2px solid #000;
+            top: -10%;
+        }
+
+        span:after {
+            border-bottom: 2px solid #000;
+            top: -10%;
+        }
+    }
+    .subtitle {
+        font-size: 24px;
+        color: #000;
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    .main-info {
+        width: 590px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 80px;
+
+        p {
+            color: #000;
+        }
+    }
+}

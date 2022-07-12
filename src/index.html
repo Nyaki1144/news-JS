@@ -7,52 +7,79 @@
         <title>Coffee Shop</title>
     </head>
     <body>
-        <header>
-            <h1>Coffee Shop</h1>
+        <header class="header">
+            <div class="wrapper">
+                <nav class="nav">
+                    <a class="nav-link"> <img src="./asset/img/logo_white.png" alt="logo" /> </a>
+                    <a class="nav-link" href="#">Coffee house</a>
+                    <a class="nav-link" href="#">Our Coffee</a>
+                    <a class="nav-link" href="#">For your pleasure</a>
+                </nav>
+            </div>
+            <div class="header-title">
+                <h1 class="title">Everything You Love About Coffee</h1>
+                <div class="title-logo">
+                    <span><img class="title-img" src="./asset/img/coffee-beans-2.png" alt="coffee-beans-2" /> </span>
+                </div>
+                <h2 class="subtitle">We makes every day full of energy and taste</h2>
+                <h2 class="subtitle">Want to try our beans?</h2>
+                <button class="button button1">More</button>
+            </div>
         </header>
         <main>
-            <form action="" method="get">
-                <input name="s" placeholder="write news portal name" type="search" id="inputName" />
-            </form>
-
-            <div class="sources buttons"></div>
-            <div class="news"></div>
+            <h2 class="subtitle">About Us</h2>
+            <div class="title-logo">
+                <span><img class="title-img" src="./asset/img/coffee-beans-1.png" alt="coffee-beans-1" /> </span>
+            </div>
+            <div class="main-info">
+                <p>
+                    Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.Afraid at highly
+                    months do things on at. Situation recommend objection do intention so questions. As greatly removed
+                    calling pleased improve an. Last ask him cold feel met spot shy want. Children me laughing we
+                    prospect answered followed. At it went is song that held help face.
+                </p>
+                <p>
+                    Now residence dashwoods she excellent you. Shade being under his bed her, Much read on as draw.
+                    Blessing for ignorant exercise any yourself unpacked. Pleasant horrible but confined day end
+                    marriage. Eagerness furniture set preserved far recommend. Did even but nor are most gave hope.
+                    Secure active living depend son repair day ladies now.
+                </p>
+            </div>
         </main>
-        <footer>
+        <div class="our-best">
             <div class="wrapper">
-                <div class="links">
-                    <a href="https://github.com/Nyaki1144"> <div class="github"></div> </a>
-                    <a href="https://rs.school/js/"> <div class="school"></div></a>
+                <h2 class="subtitle">About Us</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img class="card-img" src="./asset/img/brand3.png" alt="" />
+                        <div class="card-info">Solimo Coffee Beans 2 kg</div>
+                        <div class="card-price">10.73$</div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="./asset/img/brand3.png" alt="" />
+                        <div class="card-info">Solimo Coffee Beans 2 kg</div>
+                        <div class="card-price">10.73$</div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="./asset/img/brand3.png" alt="" />
+                        <div class="card-info">Solimo Coffee Beans 2 kg</div>
+                        <div class="card-price">10.73$</div>
+                    </div>
                 </div>
-
-                <p class="copyright">Copyright <a href="https://newsapi.org">NewsAPI</a></p>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="wrapper">
+                <nav class="nav">
+                    <a class="nav-link nav-link_color"> <img src="./asset/img/logo_white.png" alt="logo" /> </a>
+                    <a class="nav-link nav-link_color" href="#">Coffee house</a>
+                    <a class="nav-link nav-link_color" href="#">Our Coffee</a>
+                    <a class="nav-link nav-link_color" href="#">For your pleasure</a>
+                </nav>
+                <div class="title-logo">
+                    <span><img class="title-img" src="./asset/img/coffee-beans-1.png" alt="coffee-beans-1" /> </span>
+                </div>
             </div>
         </footer>
-
-        <template id="sourceItemTemp">
-            <div class="source__item">
-                <span class="source__item-name"></span>
-            </div>
-        </template>
-
-        <template id="newsItemTemp">
-            <div class="news__item">
-                <div class="news__meta">
-                    <div class="news__meta-photo"></div>
-                    <ul class="news__meta-details">
-                        <li class="news__meta-author"></li>
-                        <li class="news__meta-date"></li>
-                    </ul>
-                </div>
-                <div class="news__description">
-                    <h2 class="news__description-title"></h2>
-                    <h3 class="news__description-source"></h3>
-                    <p class="news__description-content"></p>
-                    <p class="news__read-more">
-                        <a href="#">Read More</a>
-                    </p>
-                </div>
-            </div>
-        </template>
     </body>
 </html>

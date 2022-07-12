@@ -1,3 +1,5 @@
-interface User {
-    name: string;
-}
+import './global.scss';
+
+// interface User {
+//     name: string;
+// }

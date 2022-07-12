@@ -1,0 +1,30 @@
+.title-logo {
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    span {
+        position: relative;
+    }
+
+    span:before {
+        display: block;
+        width: 75px;
+        content: '';
+        position: absolute;
+        border-bottom: 2px solid #fff;
+        top: -50%;
+        right: 50px;
+    }
+
+    span:after {
+        display: block;
+        width: 75px;
+        content: '';
+        position: absolute;
+        border-bottom: 2px solid #fff;
+        top: -50%;
+        left: 50px;
+    }
+}
