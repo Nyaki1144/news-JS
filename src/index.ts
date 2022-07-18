@@ -1,6 +1,6 @@
 import './global.scss';
 // import { Loader } from './commponents/controller/loader';
-import { Card } from './commponents/view/card';
+// import { Card } from './commponents/view/card';
 
 import './commponents/controller/loader';
 import './commponents/controller/filterName';

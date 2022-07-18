@@ -1,7 +1,7 @@
 const filterBrand = document.querySelector('.filter-brand');
 const cardCity = document.querySelectorAll('.card');
 
-const country: string[] = ['brazil', 'kemya', 'columbia'];
+// const country: string[] = ['brazil', 'kemya', 'columbia'];
 
 filterBrand?.addEventListener('click', (event: Event) => {
     cardCity.forEach((el) => {

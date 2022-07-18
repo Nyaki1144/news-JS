@@ -42,11 +42,3 @@ export class Card {
         });
     }
 }
-
-// id: number;
-// img: string;
-// name: string;
-// count: string;
-// color: string;
-// weight: string;
-// bestsellers: boolean;
