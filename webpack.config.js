@@ -12,6 +12,10 @@ const baseConfig = {
     module: {
         rules: [
             {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
+            {
                 test: /\.html$/i,
                 loader: 'html-loader',
             },
@@ -25,10 +29,7 @@ const baseConfig = {
             },
             { test: /\.ts$/, loader: 'ts-loader' },
             { test: /\.js$/, loader: 'source-map-loader' },
-            {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: 'asset/resource',
-            },
+
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource',
@@ -38,16 +39,22 @@ const baseConfig = {
     resolve: {
         extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js'],
     },
+    devtool: 'source-map',
+
     output: {
         filename: 'index.js',
-        assetModuleFilename: 'asset/[hash][ext][query]',
         path: path.resolve(__dirname, './dist'),
+        assetModuleFilename: 'asset/img/[name][ext]',
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, './src/index.html'),
             filename: 'index.html',
         }),
+        // new HtmlWebpackPlugin({
+        //     template: path.resolve(__dirname, './src/ourCoffee.html'),
+        //     filename: 'ourCoffee.html',
+        // }),
         new CleanWebpackPlugin(),
         new EslingPlugin({ extensions: 'ts' }),
     ],

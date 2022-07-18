@@ -1,58 +1,45 @@
 .footer {
-    .wrapper .nav {
-        display: flex;
-        height: 35px;
-        align-items: flex-end;
-        margin-top: 30px;
+    .wrapper {
+        .nav {
+            align-items: flex-start;
+            justify-content: center;
 
-        .nav-link:nth-child(1) {
-            margin: 0;
-            height: 35px;
+            .nav-link {
+                transition: all linear 0.2s;
+                margin: 0 19px 0 21px;
+                color: #000;
+            }
         }
 
-        .nav-link:nth-child(2) {
-            margin-left: 0;
-        }
+        .title-logo {
+            text-align: center;
+            width: 200px;
+            margin: 0 auto;
+            overflow: hidden;
 
-        .nav-link {
-            transition: all linear 0.2s;
-            margin: 0 19px 0 21px;
-            color: #000;
-        }
+            span {
+                position: relative;
+            }
 
-        .nav-link:hover {
-            color: antiquewhite;
-        }
-    }
+            span:before {
+                display: block;
+                width: 75px;
+                content: '';
+                position: absolute;
+                border-bottom: 2px solid #000;
+                top: -50%;
+                right: 50px;
+            }
 
-    .title-logo {
-        text-align: center;
-        width: 200px;
-        margin: 0 auto;
-        overflow: hidden;
-
-        span {
-            position: relative;
-        }
-
-        span:before {
-            display: block;
-            width: 75px;
-            content: '';
-            position: absolute;
-            border-bottom: 2px solid #000;
-            top: -50%;
-            right: 50px;
-        }
-
-        span:after {
-            display: block;
-            width: 75px;
-            content: '';
-            position: absolute;
-            border-bottom: 2px solid #000;
-            top: -50%;
-            left: 50px;
+            span:after {
+                display: block;
+                width: 75px;
+                content: '';
+                position: absolute;
+                border-bottom: 2px solid #000;
+                top: -50%;
+                left: 50px;
+            }
         }
     }
 }

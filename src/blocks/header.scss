@@ -8,6 +8,17 @@
     overflow: hidden;
 }
 
+.header-ourCoffee {
+    height: 260px;
+
+    background-image: url('asset/img/mask2.jpg');
+
+    .title {
+        font-size: 40px;
+        margin-top: 80px;
+    }
+}
+
 .header-title {
     text-align: center;
 }

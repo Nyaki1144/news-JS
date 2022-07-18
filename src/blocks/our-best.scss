@@ -1,10 +1,29 @@
 .our-best {
     margin-top: 100px;
-    height: 490px;
-    background-image: url('asset/img/mask.jpg');
-    background-color: #4c3d33;
+    // height: 490px;
+    // background-image: url('asset/img/mask1.jpg');
+    background-color: #f5e8d8;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     overflow: hidden;
+
+    .subtitle {
+        width: 100%;
+    }
+
+    .filter {
+        display: flex;
+        width: 25%;
+        color: black;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

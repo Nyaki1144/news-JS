@@ -5,14 +5,16 @@
             text-align: center;
             color: #000;
             font-family: 'Merienda-Regular';
+            padding-bottom: 50px;
         }
     }
 }
 
 .cards {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
-    width: 800px;
+    width: 75%;
     justify-content: space-evenly;
     align-content: center;
 }
@@ -23,6 +25,8 @@
     background-color: rgba($color: #fff, $alpha: 0.65);
     border-radius: 10px;
     text-align: center;
+    color: #000;
+    margin-bottom: 20px;
 
     .card-img {
         display: block;
@@ -30,11 +34,9 @@
     }
 
     .card-info {
-        color: #000;
     }
 
     .card-price {
-        color: #000;
         text-align: right;
         margin: 10px 20px 22px;
     }

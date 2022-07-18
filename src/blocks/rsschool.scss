@@ -1,0 +1,16 @@
+.rsschool {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .title-gitHub {
+        width: 60px;
+        background-color: black;
+        border-radius: 5%;
+    }
+
+    .title-rs_school {
+        width: 100px;
+        height: 50px;
+    }
+}

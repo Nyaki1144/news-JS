@@ -12,7 +12,7 @@
                 <nav class="nav">
                     <a class="nav-link"> <img src="./asset/img/logo_white.png" alt="logo" /> </a>
                     <a class="nav-link" href="#">Coffee house</a>
-                    <a class="nav-link" href="#">Our Coffee</a>
+                    <a class="nav-link" href="ourCoffee.html">Our Coffee</a>
                     <a class="nav-link" href="#">For your pleasure</a>
                 </nav>
             </div>
@@ -48,22 +48,38 @@
         </main>
         <div class="our-best">
             <div class="wrapper">
-                <h2 class="subtitle">About Us</h2>
+                <h2 class="subtitle">Product</h2>
+                <div class="filter">
+                    <div class="search">
+                        <p>Lookiing for</p>
+                        <form action="" method="get">
+                            <input name="input" placeholder="start typing here..." type="search" id="inputName" />
+                        </form>
+                    </div>
+
+                    <div class="filter-btn">
+                        <p>Or filter</p>
+                        <div class="filter-brand">
+                            <button data-city="all" class="button button2 activ-btn">All</button>
+                            <button data-city="brazil" class="button button2">Brazil</button>
+                            <button data-city="kenya" class="button button2">Kenya</button>
+                            <button data-city="columbia" class="button button2">Columbia</button>
+                        </div>
+                    </div>
+
+                    <div class="range-slider-slice">
+                        <p>Price Range</p>
+                        <div id="slider"></div>
+                    </div>
+                </div>
+
                 <div class="cards">
-                    <div class="card">
+                    <div class="card" style="display: none">
                         <img class="card-img" src="./asset/img/brand3.png" alt="" />
-                        <div class="card-info">Solimo Coffee Beans 2 kg</div>
-                        <div class="card-price">10.73$</div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img" src="./asset/img/brand3.png" alt="" />
-                        <div class="card-info">Solimo Coffee Beans 2 kg</div>
-                        <div class="card-price">10.73$</div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img" src="./asset/img/brand3.png" alt="" />
-                        <div class="card-info">Solimo Coffee Beans 2 kg</div>
-                        <div class="card-price">10.73$</div>
+                        <img class="card-img" src="./asset/img/brand2.png" alt="" />
+                        <img class="card-img" src="./asset/img/brand1.png" alt="" />
+                        <img class="card-img" src="./asset/img/brand5.png" alt="" />
+                        <img class="card-img" src="./asset/img/brand4.png" alt="" />
                     </div>
                 </div>
             </div>
@@ -71,13 +87,21 @@
         <footer class="footer">
             <div class="wrapper">
                 <nav class="nav">
-                    <a class="nav-link nav-link_color"> <img src="./asset/img/logo_white.png" alt="logo" /> </a>
                     <a class="nav-link nav-link_color" href="#">Coffee house</a>
                     <a class="nav-link nav-link_color" href="#">Our Coffee</a>
                     <a class="nav-link nav-link_color" href="#">For your pleasure</a>
                 </nav>
                 <div class="title-logo">
                     <span><img class="title-img" src="./asset/img/coffee-beans-1.png" alt="coffee-beans-1" /> </span>
+                </div>
+
+                <div class="rsschool">
+                    <a href="https://github.com/Nyaki1144"
+                        ><img class="title-gitHub" src="./asset/img/GitHub.png" alt="GitHub"
+                    /></a>
+                    <a href="https://rs.school/js/">
+                        <img class="title-rs_school" src="./asset/img/rs_school_js.png" alt="rs_school_js" />
+                    </a>
                 </div>
             </div>
         </footer>
