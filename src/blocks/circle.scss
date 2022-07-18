@@ -1,0 +1,16 @@
+.basket {
+    position: relative;
+    img {
+        width: 50px;
+        position: absolute;
+        bottom: -10px;
+    }
+    .circle {
+        width: 10px;
+        height: 10px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+        left: 35px;
+    }
+}

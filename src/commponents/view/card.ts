@@ -3,18 +3,17 @@ import { Coffee } from '../types/datatype';
 export class Card {
     cardCoffee: Coffee[];
     cards: HTMLElement;
-    country?: string[];
 
-    constructor(cardCoffee: Coffee[], cards: HTMLElement, country?: string[]) {
+    constructor(cardCoffee: Coffee[], cards: HTMLElement) {
         this.cardCoffee = cardCoffee;
         this.cards = cards;
-        this.country = country;
     }
 
     createCard() {
-        return this.cardCoffee.forEach((el) => {
+        return this.cardCoffee.forEach((el: Coffee) => {
             const cardOne = document.createElement('div');
             cardOne.classList.add('card');
+            cardOne.setAttribute('data-card', el.id);
 
             const cardImg = document.createElement('img');
             cardImg.classList.add('card-img');

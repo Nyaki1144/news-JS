@@ -3,8 +3,6 @@ const slider = document.getElementById('slider') as noUiSlider.Instance;
 const card = document.querySelectorAll('.card');
 const cardPrice = document.querySelectorAll('.card-price');
 
-// console.log(Number(cardPrice[4].textContent?.slice(0, 3)));
-
 noUiSlider.create(slider, {
     start: [0, 100],
     connect: true,

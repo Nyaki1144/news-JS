@@ -1,6 +1,6 @@
 export const data = [
     {
-        id: 1,
+        id: '1',
         img: './asset/img/brand1.png',
         name: 'Solimo Coffee',
         count: '2',
@@ -10,7 +10,7 @@ export const data = [
         bestsellers: true,
     },
     {
-        id: 2,
+        id: '2',
         img: './asset/img/brand3.png',
         name: 'Solimo Coffee',
         count: '2',
@@ -20,7 +20,7 @@ export const data = [
         bestsellers: true,
     },
     {
-        id: 3,
+        id: '3',
         img: './asset/img/brand2.png',
         name: 'Presto',
         count: '2',
@@ -30,7 +30,7 @@ export const data = [
         bestsellers: false,
     },
     {
-        id: 4,
+        id: '4',
         img: './asset/img/brand3.png',
         name: 'Solimo Coffee',
         count: '2',
@@ -40,7 +40,7 @@ export const data = [
         bestsellers: false,
     },
     {
-        id: 5,
+        id: '5',
         img: './asset/img/brand4.png',
         name: 'Solimo Coffee',
         count: '2',
@@ -50,7 +50,7 @@ export const data = [
         bestsellers: false,
     },
     {
-        id: 6,
+        id: '6',
         img: './asset/img/brand5.png',
         name: 'Solimo Coffee',
         count: '2',
@@ -60,7 +60,7 @@ export const data = [
         bestsellers: false,
     },
     {
-        id: 1,
+        id: '7',
         img: './asset/img/brand4.png',
         name: 'Solimo Coffee',
         count: '2',
@@ -70,7 +70,7 @@ export const data = [
         bestsellers: false,
     },
     {
-        id: 1,
+        id: '8',
         img: './asset/img/brand3.png',
         name: 'Solimo Coffee',
         count: '2',
@@ -80,7 +80,7 @@ export const data = [
         bestsellers: false,
     },
     {
-        id: 1,
+        id: '9',
         img: './asset/img/brand2.png',
         name: 'Presto',
         count: '2',
@@ -90,7 +90,7 @@ export const data = [
         bestsellers: false,
     },
     {
-        id: 1,
+        id: '10',
         img: './asset/img/brand1.png',
         name: 'Solimo Coffee',
         count: '2',
@@ -100,7 +100,7 @@ export const data = [
         bestsellers: false,
     },
     {
-        id: 1,
+        id: '11',
         img: './asset/img/brand3.png',
         name: 'Solimo Coffee',
         count: '2',
@@ -110,7 +110,7 @@ export const data = [
         bestsellers: false,
     },
     {
-        id: 1,
+        id: '12',
         img: './asset/img/brand2.png',
         name: 'Presto',
         count: '2',
@@ -120,7 +120,7 @@ export const data = [
         bestsellers: false,
     },
     {
-        id: 1,
+        id: '13',
         img: './asset/img/brand1.png',
         name: 'Solimo Coffee',
         count: '2',
@@ -130,7 +130,7 @@ export const data = [
         bestsellers: false,
     },
     {
-        id: 1,
+        id: '14',
         img: './asset/img/brand1.png',
         name: 'Solimo Coffee',
         count: '2',
@@ -140,7 +140,7 @@ export const data = [
         bestsellers: false,
     },
     {
-        id: 1,
+        id: '15',
         img: './asset/img/brand4.png',
         name: 'Solimo Coffee',
         count: '2',
@@ -150,7 +150,7 @@ export const data = [
         bestsellers: false,
     },
     {
-        id: 1,
+        id: '16',
         img: './asset/img/brand3.png',
         name: 'Solimo Coffee',
         count: '2',
@@ -160,7 +160,7 @@ export const data = [
         bestsellers: false,
     },
     {
-        id: 1,
+        id: '17',
         img: './asset/img/brand5.png',
         name: 'Solimo Coffee',
         count: '2',
@@ -170,7 +170,7 @@ export const data = [
         bestsellers: false,
     },
     {
-        id: 1,
+        id: '18',
         img: './asset/img/brand4.png',
         name: 'Solimo Coffee',
         count: '2',
@@ -179,6 +179,54 @@ export const data = [
         weight: 0.5,
         bestsellers: false,
     },
+    {
+        id: '19',
+        img: './asset/img/brand4.png',
+        name: 'Solimo Coffee',
+        count: '2',
+        price: 7.6,
+        country: 'kenya',
+        weight: 0.5,
+        bestsellers: false,
+    },
+    {
+        id: '20',
+        img: './asset/img/brand3.png',
+        name: 'Solimo Coffee',
+        count: '2',
+        price: 62.5,
+        country: 'columbia',
+        weight: 2,
+        bestsellers: false,
+    },
+    {
+        id: '21',
+        img: './asset/img/brand1.png',
+        name: 'Solimo Coffee',
+        count: '2',
+        price: 25,
+        country: 'brazil',
+        weight: 0.5,
+        bestsellers: false,
+    },
+    {
+        id: '22',
+        img: './asset/img/brand2.png',
+        name: 'Solimo Coffee',
+        count: '2',
+        price: 45,
+        country: 'columbia',
+        weight: 2,
+        bestsellers: false,
+    },
+    {
+        id: '23',
+        img: './asset/img/brand1.png',
+        name: 'Solimo Coffee',
+        count: '2',
+        price: 32,
+        country: 'brazil',
+        weight: 0.5,
+        bestsellers: false,
+    },
 ];
-
-//  default data;
